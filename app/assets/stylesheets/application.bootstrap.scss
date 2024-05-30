@@ -1,5 +1,5 @@
-@import 'bootstrap/scss/bootstrap';
-@import 'bootstrap-icons/font/bootstrap-icons';
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons";
 
 @import "bootstrap/scss/bootstrap";
 @import "bootstrap-icons/font/bootstrap-icons";
@@ -60,7 +60,6 @@ img {
   /* Google Chrome & Safari 6+ */
 }
 
-
 img#project-img:hover {
   transition-timing-function: ease-in-out;
   transition: 1.25s;
@@ -87,7 +86,6 @@ p {
   left: 0;
   min-height: 300px;
 }
-
 
 //navbar
 
@@ -215,7 +213,6 @@ nav svg {
   border: 1px solid #000 !important;
 }
 
-
 .menu-link-icons a {
   display: block;
 }
@@ -240,9 +237,6 @@ nav svg {
   iframe {
     width: 800px;
   }
-  .links {
-    display: none;
-  }
 }
 
 @include media-breakpoint-down(lg) {
@@ -254,5 +248,21 @@ nav svg {
 @include media-breakpoint-down(md) {
   iframe {
     width: 450px;
+  }
+
+  .links{
+    display: none;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  iframe {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  iframe {
+    width: 250px;
   }
 }
