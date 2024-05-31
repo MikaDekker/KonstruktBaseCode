@@ -1,9 +1,6 @@
 @import "bootstrap/scss/bootstrap";
 @import "bootstrap-icons/font/bootstrap-icons";
 
-@import "bootstrap/scss/bootstrap";
-@import "bootstrap-icons/font/bootstrap-icons";
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -44,6 +41,12 @@ a:-webkit-any-link {
   color: black;
   cursor: auto;
   text-transform: uppercase;
+}
+
+ul{
+  list-style: none;
+  font-weight: 100;
+
 }
 
 h3 {
@@ -206,12 +209,6 @@ nav svg {
   font-size: larger;
   color: #b2b2b2;
 }
-#magicPointer {
-  background-color: #000 !important;
-}
-#magicMouseCursor {
-  border: 1px solid #000 !important;
-}
 
 .menu-link-icons a {
   display: block;
@@ -250,7 +247,7 @@ nav svg {
     width: 450px;
   }
 
-  .links{
+  .links {
     display: none;
   }
 }
@@ -259,10 +256,51 @@ nav svg {
   iframe {
     width: 350px;
   }
+
+  .home-text {
+    font-size: small;
+  }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   iframe {
-    width: 250px;
+    width: 230px;
   }
+
+  .home-text {
+    font-size: x-small;
+  }
+}
+
+// home
+
+.home-container {
+  position: absolute;
+  width: 80vw;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+// about
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+}
+
+
+@media screen and (max-width: 1430px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+//
+
+.p-arrow-back{
+  vertical-align: top;
 }
