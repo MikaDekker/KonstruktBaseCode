@@ -191,14 +191,19 @@ nav svg {
   );
 }
 
-
-
-#color-img{
+#color-img {
   filter: grayscale(0);
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 75%;
+}
 
+.color-text{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }
 
 // OTHER THINGS
@@ -329,4 +334,18 @@ nav svg {
   height: 17px;
   width: 17px;
   color: #4b4b4b;
+}
+
+#nxt-arrow {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.project-btns {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8rem;
 }
